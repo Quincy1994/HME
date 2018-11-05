@@ -1,0 +1,3 @@
+g++ -lm -pthread -Ofast -march=native -Wall -funroll-loops -ffast-math -Wno-unused-result hmu.cpp -o hmu -lgsl -lm -lgslcblas
+./hmu -trainmw /media/iiip/Elements/数据集/user_profiling/weibo/cache/HME/message_word_network.txt -trainuw /media/iiip/Elements/数据集/user_profiling/weibo/cache/HME/user_word_network.txt -trainum /media/iiip/Elements/数据集/user_profiling/weibo/cache/HME/user_message_network.txt -outputemb /media/iiip/Elements/数据集/user_profiling/weibo/cache/HME/outputemb.txt -outputctx /media/iiip/Elements/数据集/user_profiling/weibo/cache/HME/outputctx.txt -binary 0 -size 100 -negative 5 -mw_samples 1000 -uw_samples 500 -um_samples 100 -rho 0.025 -iter 10 -threads 40 
+
